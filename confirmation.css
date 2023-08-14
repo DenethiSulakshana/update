@@ -1,0 +1,179 @@
+body{
+  background-color:rgb(231, 242, 252);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .subheading {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: monospace;
+    font-style:normal;
+    text-align: center;
+    }
+  .confirmation-message {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: monospace;
+    font-style: italic;
+    padding: 10px; /* Add padding to the confirmation message */
+    border: 2px solid #000000; /* Add border to the confirmation message */
+  }
+  
+  /* Media query for screens with a maximum width of 768px (tablets and mobiles) */
+@media (max-width: 768px) {
+  h2.subheading {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+/* Media query for screens with a maximum width of 576px (most mobile devices) */
+@media (max-width: 576px) {
+  h2.subheading {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+.watermark{
+  background-image: url('mark.png');
+  background-repeat: no-repeat; /* Use 'repeat-x' or 'repeat-y' to repeat only in one direction */
+  background-position: center; 
+}
+/* Media query for screens with a maximum width of 768px (tablets and mobiles) */
+@media (max-width: 768px) {
+  .watermark {
+    /* Adjust the size and position of the watermark on smaller screens */
+    top: 0px; 
+    left: 10px; 
+    width: 80px;
+    height: 40px; 
+    opacity: 0.3; 
+  }
+}
+
+/* Media query for screens with a maximum width of 576px (most mobile devices) */
+@media (max-width: 576px) {
+  .watermark {
+    /* Further adjustments for even smaller screens */
+    top: 5px; 
+    left: 5px; 
+    width: 60px; 
+    height: 30px; 
+    opacity: 0.2; 
+  }
+}
+
+
+/* Apply styles to the table */
+#detailsTable {
+  margin: 0 auto;
+  float: none;
+  margin-top: 20px; /* Add some margin from the top */
+  width: 50%; /* Set a width for the table */
+  border-collapse: collapse; /* Collapse borders for a cleaner look */
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+#detailsTable th, #detailsTable td {
+  border: 1px solid #000000; /* Add borders to table cells */
+  padding: 8px; /* Add padding within cells */
+  text-align: left; /* Align text to the left */
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#detailsTable th {
+  background-color: #f2f2f2; /* Add a background color to header cells */
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#detailsTableBody tr:nth-child(even) {
+  background-color: #000000;
+  color: #7d86e7;
+}
+
+/* Apply background color to odd rows */
+#detailsTableBody tr:nth-child(odd) {
+  background-color: #ffffff;
+  color: #000;
+}
+/* Small screens */
+@media (max-width: 768px) {
+  #detailsTable {
+    width: 100%; /* Full width for small screens */
+    margin-top: 10px; /* Adjust margin for smaller screens */
+  }
+
+  #detailsTable th, #detailsTable td {
+    font-size: 12px; /* Smaller font size for small screens */
+  }
+}
+.footer{
+  background:#000;
+  padding:10px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:gray;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#fff;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
+  

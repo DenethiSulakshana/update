@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    text-align: justify;
+    background-color:rgb(231, 242, 252);
+}
+nav{
+    background: #77b3e1;
+    height: 80px;
+    width: 100%;
+}
+
+lable.logo{
+    color: black;
+    font-size: 28px;
+    line-height: 60px;
+    padding: 0 30px;
+    font-weight: bold;
+}
+span{
+    color: rgb(6, 6, 177);
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 15px;
+    text-transform:none;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a.pages,a:hover{
+    background: rgb(53, 135, 208);
+    transition: .5s;
+}
+body>section{
+    margin-top: 0;
+    background-color: lightblue; /*fallback*/
+    background: url(htchy\ new.jpg) no-repeat 80% 100%; /*fallback*/
+    background-repeat: no-repeat; /*Do not repeat the image*/
+    background-size:cover;
+    height: 450px;
+    width: 100%;
+    float: center;
+}
+#searchbar {
+    float: right;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px;
+    float: right;
+    display: inline;
+    text-align: center;
+}
+h1{
+    font-weight: bold;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    background-color:  lightblue;
+    padding: 25px;
+    border: 5px solid #77b3e1 ;
+    border-radius: 10px;
+   
+}
+div.hatch{
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-weight:lighter;
+    color: black;
+    margin-left: 15px;
+}
+div.mapouter{
+    margin-top: 30px;
+    margin-bottom: 80px;
+    margin-left: 15px;
+}
+
+.slowFade {
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+}
+.slide{
+    animation-iteration-count: infinite;
+}
+.slowFade .slide img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    background: #000;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    opacity: 0;
+    transform: scale(1.5) rotate(15deg);
+    -webkit-animation: slowFade 32s infinite;
+            animation: slowFade 32s infinite;
+}
+.slowFade .slide:nth-child(3) img {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+}
+.slowFade .slide:nth-child(2) img {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+}
+.slowFade .slide:nth-child(1) img {
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+}
+@keyframes slowFade {
+    25% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+    40% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes slowFade {
+    25% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+    40% {
+        opacity: 0;
+    }
+}
+.footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    
+    .mapouter{
+        position:relative;
+        text-align:right;
+        height:510;
+        width:770;
+    }
+    .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        height:50px;
+        width:90px;
+    }
+    h2{
+        font-size: 50px;
+        font-weight: bold;
+        color: rgb(11, 11, 71);
+        margin-top: 40px;
+        margin-bottom: 60px;
+        text-align: center;
+     }
+     div.scroll-container {
+        background-color: #77b3e1;
+        overflow: auto;
+        white-space: nowrap;
+        padding: 10px;
+    }
+    div.scroll-container img{
+        padding: 10px;
+    }
+    .mapouter1{
+        position:relative;
+        text-align:right;
+        height: 510px;
+        width:770;
+    }
+    .gmap_canvas1 {
+        overflow:hidden;
+        background:none!important;
+        height:50px;
+        width:90px;
+    }
+    table, tr, th{
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        padding: 40px;
+        margin-bottom: 10px;
+        margin-right: 40px;
+    }
+.mapouter2{
+    position:relative;
+    text-align:right;
+    height:50px;
+    width:90px;
+
+}
+.gmap_canvas2 {
+    overflow:hidden;
+    background:none!important;
+    height:50px;
+        width:90px;
+}
+p{
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 30px;
+    font-weight: bold;
+}
+@media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+        /* Media query for screens with a maximum width of 768px (tablets and mobiles) */
+@media (max-width: 768px) {
+    lable.logo {
+      font-size: 24px;
+      line-height: 50px;
+      padding: 0 20px;
+    }
+  
+    nav ul li a {
+      font-size: 14px;
+      padding: 5px 8px;
+    }
+  
+    #searchbar {
+      font-size: 14px;
+    }
+  }
+  /* Media query for screens with a maximum width of 576px (most mobile devices) */
+@media (max-width: 576px) {
+    lable.logo {
+      font-size: 20px;
+      line-height: 40px;
+      padding: 0 15px;
+    }
+  
+    nav ul {
+      float: none;
+      margin-right: 0;
+      text-align: center;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 5px 0;
+    }
+    nav ul li a {
+        font-size: 16px;
+        padding: 7px 10px;
+      }
+    
+      #searchbar {
+        font-size: 14px;
+        margin-top: 5px;
+        float: none;
+      }
+    }

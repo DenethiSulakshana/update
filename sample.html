@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turtle Hatchery Booking</title>
+  <link rel="stylesheet" href="finalTicket.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Turtle Hatchery Booking</h1>
+    <div class="section">
+      <!--date and guest section-->
+      <h2>Dates</h2>
+      <input type="date" id="selected-date">
+    </div>
+    <div class="section">
+        <h2>Guests</h2>
+        <table>
+          <tr>
+              <th>Ticket Category</th>
+              <th>Number of Tickets</th>
+          </tr>
+        
+          <tr>
+            <td>
+              <label for="sl-adult">SL Adult</label>
+            </td>
+            <td>
+              <input type="number" id="sl-adult" min="0">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="sl-child">SL Child</label>
+            </td>
+            <td>
+              <input type="number" id="sl-child" min="0">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="foreigner-adult">Foreigner Adult</label>
+            </td>
+            <td>
+              <input type="number" id="foreigner-adult" min="0">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="foreigner-child">Foreigner Child</label>
+            </td>
+            <td>
+              <input type="number" id="foreigner-child" min="0">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="infant">Infant</label>
+            </td>
+            <td>
+              <input type="number" id="infant" min="0">
+            </td>
+          </tr>
+      </table>
+     
+      <!--duration and tickets section-->
+      <h2>Duration</h2>
+      <select id="duration">
+        <option value="1">07.00 am - 08.00 am</option>
+        <option value="2">08.00 am - 09.00 am</option>
+        <option value="3">09.00 am - 10.00 am</option>
+        <option value="4">10.00 am - 11.00 am(peak)</option>
+        <option value="5">11.00 am - 12.00 pm(peak)</option>
+        <option value="6">12.00 pm - 01.00 pm(peak)</option>
+        <option value="7">01.00 pm - 02.00 pm</option>
+        <option value="8">02.00 pm - 03.00 pm</option>
+        <option value="9">03.00 pm - 04.00 pm(peak)</option>
+        <option value="10">04.00 pm - 05.00 pm(peak)</option>
+        <option value="11">05.00 pm - 06.00 pm(peak)</option>
+        
+      
+      </select>
+    </div>
+    <br>
+    <div class="section">
+      <!--tickets table and total paypal section-->
+      <table id="summary-table">
+        <thead>
+          <tr>
+            <th>Guests</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Duration</th>
+            <th>Number of Tickets</th>
+            <th>Tickets Value</th>
+          </tr>
+        </thead>
+        <tbody id="tickets-table">
+          <!--dynamically updated-->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5">Total Payable:</td>
+            <td id="total-paypal">$0</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <button id="continue-button" disabled>Continue with purchase</button>
+  </div>
+  <br>
+
+  <div class="footer">
+    <div class="row">
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </div>
+                
+    <div class="row">
+        <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#"> Policy</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Other</a></li>
+        </ul>
+    </div>
+                
+    <div class="row">
+        Copyright © 2023  || Designed By: Denethi
+    </div>
+  </div>
+  <script src="sample.js" ></script>
+</body>
+</html>
